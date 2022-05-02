@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--<meta charset="UTF-8"> -->
+<title>my homepage</title>
+<link rel="icon" type="image/x-icon" href="aqwjc-diz5v-001.ico">
+<style>
+    a:hover{color:red}
+    body 
+    {
+        background-color: lightcyan;
+    }
+    </style>
+
+<script>
+    function current_time()
+    {
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = ( (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ ("0"+dt.getDate()).slice(-2)) +"-"+  (dt.getFullYear())+" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+(("0"+dt.getSeconds()).slice(-2)) ;
+        setTimeout('current_time()',1000);
+    }
+    </script>
+
+</head>
+    <body onload="current_time()">
+        <p>Time: <span id="datetime"></span></p>
+    <!--
+    <body>
+        <p>Time: <span id="datetime"></span></p>
+    -->    
+        <!--
+        <script>
+        
+           
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = ((dt.getFullYear())  +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ ("0"+dt.getDate()).slice(-2))  +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+(("0"+dt.getSeconds()).slice(-2)) ;
+        
+        </script>
+        -->
+        <!--
+        <embed src="Canon_In_D.mp3" loop="true" autostart="true" > -->
+        <audio controls loop>
+            <source src="Canon_In_D.mp3" type="audio/mpeg">
+        </audio>
+        
+       <div >
+           <h1 class="big"><strong>陳祈佑 CHEN,CHI-YU</strong></h1>
+        <img src="./DSC00943.JPG" width="808" height="540" alt="一張圖片">
+           <br>
+           <br>
+       </div>
+
+       <div >
+        <h2>Biography</h2>
+        <p style="margin-left:25px">我是陳祈佑，高中畢業於<a href="https://www.hs.ntnu.edu.tw/">國立臺灣師範大學附屬高級中學</a><br>
+            目前就讀於<a href="https://web.ee.ntu.edu.tw/">臺灣大學電機工程學系</a>
+           </p>
+       </div>
+
+       <div>
+        <h2 >Hobbies</h2>
+        <ol>
+           <li>Tennis, my favorite player is <a href="https://www.atptour.com/en/players/rafael-nadal/n409/overview">Rafael Nadal</a></li> 
+            <li>Basketball, my favorite team is  <a href="https://www.nba.com/warriors/">Golden State Warriors</a>
+            </li>
+            <li>Go(圍棋), my favorite player is  <a href="https://www.facebook.com/search/top?q=%E9%BB%91%E5%98%89%E5%98%89%20joanne%20missingham">黑嘉嘉 </a>
+            </li>
+           </ol>
+       </div>
+    </body>
+</html>
+       
